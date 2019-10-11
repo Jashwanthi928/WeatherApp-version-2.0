@@ -4,20 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>weatherapp V.2.0</title>
+    <title>weatherapp v.2.0</title>
 </head>
-<body>
+<body onload=activatePlacesSearch();>
     <div id="cities">
         <h5>Enter another location<br><br>
             <input type="text" class="form-control" id='input' name="term" placeholder="   Location"> 
-            <script>
-                function activatePlacesSearch(){
-                    var input=document.getElementById('input');
-                    var autocomplete=new google.maps.places.Autocomplete(input);
-                }
-                </script>
-                <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2lw5b-tiSXgfm1Q2ZidkhfOZzy3rcubc&libraries=places&callback=activatePlacesSearch"></script>
     </div>
-    
+    <script>
+    function activatePlacesSearch(){
+        var input=document.getElementById('input');
+        var autocomplete=new google.maps.places.Autocomplete(input);
+    }
+    </script>
+    <script type=" text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2lw5b-tiSXgfm1Q2ZidkhfOZzy3rcubc&libraries=places&callback=activatePlacesSearch"></script>
 </body>
 </html>
