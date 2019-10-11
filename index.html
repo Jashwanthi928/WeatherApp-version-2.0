@@ -7,10 +7,27 @@
     <title>weatherapp v.2.0</title>
 </head>
 <body onload=activatePlacesSearch();>
-    <div id="cities">
-        <h5>Enter another location<br><br>
-            <input type="text" class="form-control" id='input' name="term" placeholder="   Location"> 
+        <div id="leftSide"> 
+            <h1 >Weather App</h1>
+        </div>
+        <div id="rightSide">
+                <div id ="rightStyle">
+                    <div id = city>Bangalore, Karnataka</div>
+                    <div id = daytime></div>
+                    <div id = climate>Cloudy &#x2601; &#x2601;</div>
+                    <span id=temperature>27</span>
+                   
+                    <span id = "cel" onclick="tempClick('C');document.getElementById('cel').style.color = 'blue';document.getElementById('fah').style.color = 'black'">&deg;C</span>
+                    <span id = "fah" onclick="tempClick('F');document.getElementById('cel').style.color = 'black';document.getElementById('fah').style.color = 'blue'">|&deg;F</span>
+                    
+                    <div id="cities">
+                            <h5>Enter another location<br><br>
+                                <input type="text" class="form-control" id='input' name="term" placeholder="   Location"> 
+                        </div>
+                     
+        </div> 
     </div>
+</body>
     <script>
     function activatePlacesSearch(){
         var input=document.getElementById('input');
@@ -18,5 +35,4 @@
     }
     </script>
     <script type=" text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2lw5b-tiSXgfm1Q2ZidkhfOZzy3rcubc&libraries=places&callback=activatePlacesSearch"></script>
-</body>
 </html>
