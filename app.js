@@ -1,6 +1,12 @@
+//  This is an updated version of weather app which uses google places api and open weather api to display weather.
+// Author
+// Jashwanthi 
+
 let dataBox = 0;
 
 //Code to display day and time
+
+
 function getTwelveHrs() {
   var today = new Date();
   var day = today.getDay();
@@ -26,6 +32,8 @@ function getTwelveHrs() {
   var day = daylist[day];
   document.getElementById("daytime").innerHTML = day + "," + " " + time;
 }
+
+// code to display weather
 
 function weatherDetails() {
   let cityName = document.getElementById("input").value;
@@ -63,6 +71,9 @@ function drawWeather(d) {
   document.getElementById("temperature").innerHTML = celcius;
   document.getElementById("wicon").src = iconurl;
 }
+
+//Temperature conversion
+
 function convertTemp(value) {
   let celcius = Math.round(parseFloat(dataBox.main.temp) - 273.15);
   let fahrenheit = Math.round(
