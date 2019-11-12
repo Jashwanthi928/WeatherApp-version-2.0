@@ -1,68 +1,61 @@
- /* This is an updated version of weather app which uses google places api and open weather api to display weather.
-Author
-Jashwanthi  */
-#leftSide{
-    position: relative;
-    margin: auto;
-    font-size: 1.5em;
-    color:white;
-    width: 50%;
-    float: left;
-    height: 100vh;
-    background-color: #87ceed;
-    z-index: 1010101010;
-    font-family: condensed sans;
- }
- #rightSide {
-    position: relative;
-    width: 50%;
-    float: right;
-    height: 98vh;
-    background-color: #eee
-    ;
-    z-index: 1010101010;
-    font-family: Arial, Helvetica, sans-serif;
- }
- #leftStyle{
-     
-     padding-left: 26%;
-     padding-top: 40%;
- }
- #city{
-     font-size: 1.5em;
-     margin-bottom: 1%;
- 
- }
- #daytime{
-     
-     margin-bottom: 1%;
- 
- 
- }
- #climate{
-     margin-bottom: 1%;
- 
- }
- #rightStyle{
-     padding-left: 10%;
-     padding-top: 10%;
- }
- #cities{
-     position: fixed;
-     top: 50%;
- }
- #cel{
-     font-size: 1em;
-     color: blue;
- }
- #fah{
-     font-size: 1em; 
- }
- #temperature{
-     font-size:2em;
-     font-weight:bold;
- }
- #fah:hover, #cel:hover {
-     color:blue;
-     cursor: pointer;
-   }
+/* This is an updated version of weather app which uses google places api and open weather api to display weather.
+Author: Jashwanthi  */
+#leftSide {
+  position: relative;
+  margin: auto;
+  font-size: 1.5em;
+  color: white;
+  width: 50%;
+  float: left;
+  height: 100vh;
+  background-color: #87ceed;
+  z-index: 1010101010;
+  font-family: condensed sans;
+}
+#rightSide {
+  position: relative;
+  width: 50%;
+  float: right;
+  height: 98vh;
+  background-color: #eee;
+  z-index: 1010101010;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#leftStyle {
+  padding-left: 26%;
+  padding-top: 40%;
+}
+#city {
+  font-size: 1.5em;
+  margin-bottom: 1%;
+}
+#daytime {
+  margin-bottom: 1%;
+}
+#climate {
+  margin-bottom: 1%;
+}
+#rightStyle {
+  padding-left: 10%;
+  padding-top: 10%;
+}
+#cities {
+  position: fixed;
+  top: 50%;
+}
+#cel {
+  font-size: 1em;
+  color: blue;
+}
+#fah {
+  font-size: 1em;
+}
+#temperature {
+  font-size: 2em;
+  font-weight: bold;
+}
+#fah:hover,
+#cel:hover {
+  color: blue;
+  cursor: pointer;
+}
