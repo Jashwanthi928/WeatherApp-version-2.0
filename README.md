@@ -16,5 +16,5 @@ Create a weather application
 2. Enter the locaton in the textbox.
 3. After entering location,you can see temperature and climate of that particular location.
 
-
+![Weather](images/weather.PNG)
 
