@@ -4,25 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link  rel="stylesheet" type="text/css" href="style.css">
     <title>weatherapp v.2.0</title>
 </head>
 <body onload=getTwelveHrs()>
         <div id="leftSide"> 
+            <div id="leftStyle">
             <h1 >Weather App</h1>
         </div>
+    </div>
         <div id="rightSide">
                 <div id ="rightStyle">
-                    <div id = city>Bangalore, Karnataka</div>
-                    <div id = daytime></div>
-                    <div id = climate>Cloudy &#x2601; &#x2601;</div>
-                    <span id=temperature>27</span>
+                    <div id = "city">Bengaluru</div>
+                    <div id = "daytime"></div>
+                    <div id = "climate">cloudy</div>
+                    <div id= "icon" ><img id="wicon" src="http://openweathermap.org/img/w/11d.png"" alt="Weather icon"></div>
+                    <span id="temperature"></span>
                    
-                    <span id = "cel" onclick="tempClick('C');document.getElementById('cel').style.color = 'blue';document.getElementById('fah').style.color = 'black'">&deg;C</span>
-                    <span id = "fah" onclick="tempClick('F');document.getElementById('cel').style.color = 'black';document.getElementById('fah').style.color = 'blue'">|&deg;F</span>
+                   
+                    <span id = "cel" onclick="convertTemp('C'); document.getElementById('cel').style.color = 'blue';document.getElementById('fah').style.color = 'black'">&deg;C</span>
+                    <span id = "fah" onclick="convertTemp('F'); document.getElementById('cel').style.color = 'black';document.getElementById('fah').style.color = 'blue'">|&deg;F</span>
                     
                     <div id="cities">
                             <h5>Enter another location<br><br>
-                                <input type="text" class="form-control" id='input' name="term" placeholder="   Location"> 
+                                <input type="text" class="form-control" id='input' name="term" placeholder="   Location" onchange="weatherDetails()"> 
                         </div>
                      
         </div> 
