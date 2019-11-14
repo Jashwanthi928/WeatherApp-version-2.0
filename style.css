@@ -1,8 +1,7 @@
 /* This is an updated version of weather app which uses google places api and open weather api to display weather.
 Author: Jashwanthi  */
 .body{
-  margin-top: 0px;
-  margin-left: 0px;
+  margin:0px;
 }
 #leftSide {
   position: relative;
