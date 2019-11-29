@@ -49,23 +49,23 @@ function weatherDetails() {
       return resp.json();
     })
 
-    .then(function(d) {
-      drawWeather(d);
-      console.log(d);
+    .then(function(data) {
+      drawWeather(data);
+      console.log(data);
     })
     .catch(function() {});
 }
 
-function drawWeather(d) {
-  dataBox = d;
+function drawWeather(data) {
+  dataBox = data;
 
   let celcius = Math.round(parseFloat(dataBox.main.temp) - 273.15);
   let fahrenheit = Math.round(
     (parseFloat(dataBox.main.temp) - 273.15) * 1.8 + 32
   );
-  let description = d.weather[0].description;
-  let city = d.name;
-  let icon = d.weather[0].icon;
+  let description = data.weather[0].description;
+  let city = data.name;
+  let icon = data.weather[0].icon;
   let iconurl = "http://openweathermap.org/img/w/" + icon + ".png";
   document.getElementById("city").innerHTML = city;
   document.getElementById("climate").innerHTML = description;
